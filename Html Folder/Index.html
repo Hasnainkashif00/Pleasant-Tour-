@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Css/logo.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Open+Sans">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<style>
+  .description {
+      font-size: 15px;
+  }
+
+  body{
+    background-image: url(../Images/bkground.jpg);
+  }
+
+  .jj {
+      background-color: white !important;
+  }
+
+ 
+
+  h2 {
+      color: #ffffff;
+      font-size: 26px;
+      font-weight: 300;
+      position: relative;
+      margin: 30px 0 60px;
+  }
+
+  .carousel {
+      margin: 50px auto;
+      padding: 0 70px;
+  }
+
+  .carousel .item {
+      color: #0e0d0d;
+      min-height: 325px;
+      text-align: center;
+      overflow: hidden;
+  }
+
+  .carousel .thumb-wrapper {
+      padding: 25px 15px;
+      background: #fffdfd;
+      border-radius: 6px;
+      text-align: center;
+      position: relative;
+      box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  }
+
+  .carousel .item .img-box {
+      height: 120px;
+      margin-bottom: 20px;
+      width: 100%;
+      position: relative;
+  }
+
+  .carousel .item img {
+      max-width: 100%;
+      max-height: 100%;
+      display: inline-block;
+      position: absolute;
+      bottom: 0;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+  }
+
+  .carousel .item h4 {
+      font-size: 18px;
+  }
+
+  .carousel .item h4,
+  .carousel .item p,
+  .carousel .item ul {
+      margin-bottom: 5px;
+  }
+
+  .carousel .thumb-content .btn {
+      color:rgb(63, 107, 63);
+      font-size: 11px;
+
+      font-weight: bold;
+      background: none;
+      border: 1px solid rgb(63, 107, 63);
+      padding: 6px 14px;
+      margin-top: 5px;
+      line-height: 16px;
+      border-radius: 20px;
+  }
+.thumb-wrapper:hover{ border-bottom:#434444 inset 9px;
+    box-shadow: 2px 2px 3px 3px rgba(255, 255, 255, 0.479)
+  }
+  .col-md-12:hover{ border-bottom:#434444 inset 9px;
+    box-shadow: 2px 2px 3px 3px rgba(255, 255, 255, 0.479)
+  }
+  .carousel .thumb-content .btn:hover,
+  .carousel .thumb-content .btn:focus {
+      color: #fff;
+      background: rgb(63, 107, 63);
+      box-shadow: none;
+  }
+
+  .carousel .thumb-content .btn i {
+      font-size: 14px;
+      font-weight: bold;
+      margin-left: 5px;
+  }
+
+  .carousel .item-price {
+      font-size: 13px;
+      padding: 2px 0;
+  }
+
+  .carousel .item-price strike {
+      opacity: 0.7;
+      margin-right: 5px;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+      height: 44px;
+      width: 40px;
+      background: #e7e7e6;
+      margin: auto 0;
+      border-radius: 4px;
+      opacity: 0.8;
+  }
+
+  .carousel-control-prev:hover,
+  .carousel-control-next:hover {
+      background: #848080;
+      opacity: 1;
+  }
+
+  .carousel-control-prev i,
+  .carousel-control-next i {
+      font-size: 36px;
+      position: absolute;
+      top: 50%;
+      display: inline-block;
+      margin: -19px 0 0 0;
+      z-index: 5;
+      left: 0;
+      right: 0;
+      color: #000000;
+      text-shadow: none;
+      font-weight: bold;
+  }
+
+  .carousel-control-prev i {
+      margin-left: -2px;
+  }
+
+  .carousel-control-next i {
+      margin-right: -4px;
+  }
+
+  .carousel-indicators {
+      bottom: -50px;
+  }
+
+  .carousel-indicators li,
+  .carousel-indicators li.active {
+      width: 10px;
+      height: 10px;
+      margin: 4px;
+      border-radius: 50%;
+      border: none;
+  }
+
+  .carousel-indicators li {
+      background: rgba(255, 253, 253, 0.573);
+  }
+
+  .carousel-indicators li.active {
+      background: rgba(255, 255, 255, 0.751);
+  }
+
+  .carousel .wish-icon {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      z-index: 99;
+      cursor: pointer;
+      font-size: 16px;
+      color: #080808;
+  }
+
+  .carousel .wish-icon .fa-heart {
+      color: #ff6161;
+  }
+
+  .star-rating li {
+      padding: 0;
+  }
+
+  .star-rating i {
+      font-size: 14px;
+      color: #ffc000;
+  }
+  .text-light{
+font-size:larger;
+margin-bottom: 35px;
+  }
+  #ft{
+  font-size:large;
+  
+ }
+ .table{
+    color: #fff;
+ }
+ #tb:hover{ 
+    box-shadow: 3px 3px 5px 5px rgba(255, 255, 255, 0.479)
+  }
+</style>
+<script>$(document).ready(function () {
+      $(".wish-icon i").click(function () {
+          $(this).toggleClass("fa-heart fa-heart-o");
+      });
+  });
+
+</script>
+<body>
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+        <div class="container-fluid ">
+             
+              <div class="circle">
+                <img src="../Images/R (4).png" alt="" width="160" height="110" id="img1">
+                    </div>
+                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+               
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                  <li class="nav-item mx-5">
+                    <a class="nav-link " aria-current="page" href="Index.html" id="txt">Home</a>
+                  </li>
+                  <li class="nav-item mx-5">
+                    <a class="nav-link" href="About_us.html" id="txt">About Us</a>
+                  </li>
+                  <li class="nav-item mx-5">
+                    <a class="nav-link" href="Contact_us.html" id="txt">Contact Us</a>
+                  </li>
+                  <li class="nav-item mx-5">
+                    <a class="nav-link" href="Returns.html" id="txt">FAQS</a>
+                  </li>
+                  <div class="row justify-content-around">
+                    <div class="col-3" >
+                  <a class="nav-link" href="Sign_up.html" id="txt">Login</a>
+                </div>
+              <div class="col-3 " id="icon">
+                  <i class='bx bxs-user' ></i></div>
+                  </div>
+                </ul>
+                <div>
+            
+              </div>
+              <a class="text-light" href="https://fb.com/templatemo" target="_blank" rel="sponsored"><i
+                class="fab fa-facebook-f fa-sm fa-fw text-light"></i></a>
+        <a class="text-light" href="https://www.instagram.com/" target="_blank"><i
+                class="fab fa-instagram fa-sm fa-fw  text-light"></i></a>
+        <a class="text-light" href="https://twitter.com/" target="_blank"><i
+                class="fab fa-twitter fa-sm fa-fw  text-light "></i></a>
+        <a class="text-light" href="https://www.linkedin.com/ " target="_blank"><i
+                class="fab fa-linkedin fa-sm fa-fw text-light"></i></a>
+    </div>
+            </div>
+          </nav>
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+            <div class="container-fluid">
+              <div class="collapse navbar-collapse justify-content-center mx-5" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-5 ">
+                 
+                  <li class="nav-item dropdown mx-3">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Hills Tour
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="../Dropdown_hill_station/hills_mens_wear.html"> Mens wear</a> </li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="../Dropdown_hill_station/womens_wear.html"> Womens wear</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="../Dropdown_hill_station/Hills_tent_Gadjets.html">Tents & Gadjets</a></li>
+                        
+                    </ul>
+                  </li>
+                </ul>
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item dropdown mx-3">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Country Tour
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="../Dropdown_Country_tour/Charger And Power Bank.html "> Accessories</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="../Dropdown_Country_tour/casual slippers.html">Casual Slippers</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="../Dropdown_Country_tour/Clothing.html">Clothings</a></li>
+                  </ul>
+                  </li>
+                </ul>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                  <li class="nav-item dropdown mx-3">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      World Tour
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="../Dropdown_world_tour/WT_accessories.html"> Accessories</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="../Dropdown_world_tour/WT_skincare.html">Skin Care</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="../Dropdown_world_tour/WT_tent.html">Tents</a></li>
+                    </ul>
+                  </li>
+                
+                </ul>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item dropdown mx-3">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Beach Tour
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item " href="../Dropdown_Beach_tour/BT_hats.html">Hats</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="../Dropdown_Beach_tour/BT_sunglasses.html">Sun Glasses</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="../Dropdown_Beach_tour/BT_toys.html">Beach Accesories</a></li>
+                      </ul>
+                    </li>
+                  
+                  </ul>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item dropdown mx-3">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Island Tour
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item " href="../Dropdown_Island_tour/Island_accessories.html"> Accessories</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="../Dropdown_Island_tour/Island_Laguage.html">Laguage</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="../Dropdown_Island_tour/Island_Skincare.html">Skincare</a></li>
+                      </ul>
+                    </li>
+                  
+                  </ul>
+            
+               
+              </div>
+            </div>
+          </nav>
+    </div>
+    <div class="container-fluid mt-3 mb-5">
+        <div class="row">
+            <div class="col">
+                <img src="../Images/worldwide tour.jpg" alt="" class=" w-100">
+            </div>
+        </div>
+      </div>
+    <div class="container-xl mb-5">
+      <div class="row">
+          <div class="col-md-12">
+              <h2 class="headings text-center " style="font-family: sans-serif;">Featured Products</h2>
+              <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+                  <!-- Carousel indicators -->
+                  <ol class="carousel-indicators">
+                      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                      <li data-target="#myCarousel" data-slide-to="1"></li>
+                      <li data-target="#myCarousel" data-slide-to="2"></li>
+                  </ol>
+                  <!-- Wrapper for carousel items -->
+                  <!-- fist slide -->
+                  <div class="carousel-inner">
+                      <div class="item carousel-item active">
+                          <div class="row">
+                              <div class="col-sm-3 mb-2 ">
+                                  <div class="thumb-wrapper  ">
+                                      <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                      <div class="img-box">
+                                          <img src="../Images/bt_images/sn2.jpg" class="img-fluid" alt="">
+                                      </div>
+                                      <div class="thumb-content">
+                                          <h4>Moxy Sunglasses </h4>
+                                          <div class="star-rating">
+                                              <ul class="list-inline">
+                                                  <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                  <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                  <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                  <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                  <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                              </ul>
+                                          </div>
+                                          <p class="item-price"><strike>PKR.3,500</strike> <b>PKR.2,999</b></p>
+                                          <a href="#" class="btn btn-primary">Add to Cart</a>
+                                      </div>
+                                  </div>
+                              </div>
+                              <!-- second slide -->
+                              <div class="col-sm-3 mb-2">
+                                  <div class="thumb-wrapper ">
+                                      <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                      <div class="img-box">
+                                          <img src="../Images/Hills Accesories/instcam.jpg"class="img-fluid" alt="Camera">
+                                      </div>
+                                      <div class="thumb-content">
+                                          <h4>Mini Camera</h4>
+                                          <div class="star-rating">
+                                              <ul class="list-inline">
+                                                  <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                  <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                  <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                  <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                  <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                              </ul>
+                                          </div>
+                                          <p class="item-price"><strike>PKR.35,000</strike> <b>PKR.32,999</b></p>
+                                          <a href="#" class="btn btn-primary">Add to Cart</a>
+                                      </div>
+                                  </div>
+                              </div>
+                              <!--third slide-->
+                              <div class="col-sm-3  mb-2">
+                                  <div class="thumb-wrapper ">
+                                      <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                      <div class="img-box">
+                                          <img src="../Images/Hills Accesories/wcoat.jpg"class="img-fluid" alt="">
+                                      </div>
+                                      <div class="thumb-content">
+                                          <h4>Women Coat</h4>
+                                          <div class="star-rating">
+                                              <ul class="list-inline">
+                                                  <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                  <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                  <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                  <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                  <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                              </ul>
+                                          </div>
+                                          <p class="item-price"><strike>PKR.16,000</strike> <b>PKR.12,900</b></p>
+                                          <a href="#" class="btn btn-primary">Add to Cart</a>
+                                      </div>
+                                  </div>
+                              </div>
+                              <!--fourth slide -->
+                              <div class="col-sm-3 mb-2">
+                                  <div class="thumb-wrapper">
+                                      <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                      <div class="img-box">
+                                          <img src="../Images/Country Tour Accessories/image23.jpg" class="img-fluid" alt="">
+                                      </div>
+                                      <div class="thumb-content">
+                                          <h4>Cross Slippers</h4>
+                                          <div class="star-rating">
+                                              <ul class="list-inline">
+                                                  <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                  <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                  <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                  <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                  <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                              </ul>
+                                          </div>
+                                          <p class="item-price"><strike>PKR.4,500</strike> <b>PKR.3,500</b></p>
+                                          <a href="#" class="btn btn-primary">Add to Cart</a>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <!-- fifth slide -->
+                      <div class="item carousel-item">
+                          <div class="row">
+                              <div class="col-sm-3 mb-2">
+                                  <div class="thumb-wrapper">
+                                      <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                      <div class="img-box">
+                                          <img src="../Images/Hills Accesories/mshirt3.jpg" class="img-fluid" alt="">
+                                      </div>
+                                      <div class="thumb-content">
+                                          <h4>Plain T-shirt</h4>
+                                          <p class="item-price"><strike>PKR.4,200</strike> <span>PKR.2,999</span></p>
+                                          <div class="star-rating">
+                                              <ul class="list-inline">
+                                                  <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                  <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                  <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                  <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                  <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                              </ul>
+                                          </div>
+                                          <a href="#" class="btn btn-primary">Add to Cart</a>
+                                      </div>
+                                  </div>
+                              </div>
+                              <!--sixth slide -->
+                              <div class="col-sm-3 mb-2">
+                                  <div class="thumb-wrapper">
+                                      <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                      <div class="img-box">
+                                          <img src="../Images/Country Tour Accessories/jac.jpg" class="img-fluid" alt="">
+                                      </div>
+                                      <div class="thumb-content">
+                                          <h4>Denim jacket</h4>
+                                          <p class="item-price"><strike>PKR.6,200</strike> <span>PKR.4,999</span></p>
+                                          <div class="star-rating">
+                                              <ul class="list-inline">
+                                                  <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                  <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                  <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                  <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                  <li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
+                                              </ul>
+                                          </div>
+                                          <a href="#" class="btn btn-primary">Add to Cart</a>
+                                      </div>
+                                  </div>
+                              </div>
+                              <!-- seventh slide -->
+                              <div class="col-sm-3 mb-2">
+                                  <div class="thumb-wrapper">
+                                      <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                      <div class="img-box">
+                                          <img src="../Images/World Tour Accessories/hat2.jpg" class="img-fluid" alt="">
+                                      </div>
+                                      <div class="thumb-content">
+                                          <h4>Cowboy Hat</h4>
+                                          <p class="item-price"><strike>PKR.3,999</strike> <span>PKR.2,500</span></p>
+                                          <div class="star-rating">
+                                              <ul class="list-inline">
+                                                  <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                  <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                  <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                  <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                  <li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
+                                              </ul>
+                                          </div>
+                                          <a href="#" class="btn btn-primary">Add to Cart</a>
+                                      </div>
+                                  </div>
+                              </div>
+                              <!--eight slide-->
+                              <div class="col-sm-3 mb-2">
+                                  <div class="thumb-wrapper">
+                                      <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                      <div class="img-box">
+                                          <img src="../Images/World Tour Accessories/tent3.jpg" class="img-fluid" alt="">
+                                      </div>
+                                      <div class="thumb-content">
+                                          <h4>Camping Tent</h4>
+                                          <p class="item-price"><strike>PKR.14,000</strike> <span>PKR.12,000</span></p>
+                                          <div class="star-rating">
+                                              <ul class="list-inline">
+                                                  <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                  <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                  <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                  <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                  <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                              </ul>
+                                          </div>
+                                          <a href="#" class="btn btn-primary">Add to Cart</a>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <!-- nine slide -->
+                      <div class="item carousel-item">
+                          <div class="row">
+                              <div class="col-sm-3 mb-2">
+                                  <div class="thumb-wrapper">
+                                      <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                      <div class="img-box">
+                                          <img src="../Images/bt_images/ht.jpg" class="img-fluid" alt="">
+                                      </div>
+                                      <div class="thumb-content">
+                                          <h4>Gambler Hat </h4>
+                                          <p class="item-price"><strike>PKR.3,999</strike> <span>PKR.2,500</span></p>
+                                          <div class="star-rating">
+                                              <ul class="list-inline">
+                                                  <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                  <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                  <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                  <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                  <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                              </ul>
+                                          </div>
+                                          <a href="#" class="btn btn-primary">Add to Cart</a>
+                                      </div>
+                                  </div>
+                              </div>
+                              <!--ten slide -->
+                              <div class="col-sm-3 mb-2">
+                                  <div class="thumb-wrapper">
+                                      <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                      <div class="img-box">
+                                          <img src="../Images/World Tour Accessories/first aid1.jpg"  class="img-fluid" alt="">
+                                      </div>
+                                      <div class="thumb-content">
+                                          <h4>FirstAid Kit</h4>
+                                          <p class="item-price"><strike>PKR.17,000</strike> <span>PKR.15,000</span></p>
+                                          <div class="star-rating">
+                                              <ul class="list-inline">
+                                                  <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                  <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                  <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                  <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                  <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                              </ul>
+                                          </div>
+                                          <a href="#" class="btn btn-primary">Add to Cart</a>
+                                      </div>
+                                  </div>
+                              </div>
+                              <!-- eleven slide-->
+                              <div class="col-sm-3 mb-2">
+                                  <div class="thumb-wrapper">
+                                      <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                      <div class="img-box">
+                                          <img  src="../Images/Island Accessories/nk.jpg" class="img-fluid" alt="">
+                                      </div>
+                                      <div class="thumb-content">
+                                          <h4>Neck Pillow</h4>
+                                          <p class="item-price"><strike>PKR.4,500</strike> <span>PKR.2,500</span></p>
+                                          <div class="star-rating">
+                                              <ul class="list-inline">
+                                                  <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                  <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                  <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                  <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                  <li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
+                                              </ul>
+                                          </div>
+                                          <a href="#" class="btn btn-primary">Add to Cart</a>
+                                      </div>
+                                  </div>
+                              </div>
+                              <!-- twevel slide-->
+                              <div class="col-sm-3 mb-2">
+                                  <div class="thumb-wrapper">
+                                      <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                      <div class="img-box">
+                                          <img src="../Images/Hills Accesories/wsn.jpg" class="img-fluid" alt="">
+                                      </div>
+                                      <div class="thumb-content">
+                                          <h4>Pink Sneakers</h4>
+                                          <p class="item-price"><strike>PKR.19,999</strike> <span>PKR.16,000</span></p>
+                                          <div class="star-rating">
+                                              <ul class="list-inline">
+                                                  <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                  <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                  <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                  <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                  <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                              </ul>
+                                          </div>
+                                          <a href="#" class="btn btn-primary">Add to Cart</a>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Carousel controls -->
+                  <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                      <i class="fa fa-angle-left"></i>
+                  </a>
+                  <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                      <i class="fa fa-angle-right"></i>
+                  </a>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  <script src="jqscrpit.js"></script>
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+  <div class="container-fluid mb-5" id="tb">
+    <div class="row">
+        <div class="col" >
+            <script>
+                $(document).ready(function(){
+                    $('#myTable').DataTable();
+                });
+            </script>
+            <table id="myTable" class="table table-hover  table-bordered">
+                <thead>
+                    <tr>
+                        <th>Product Name</th>
+                        <th>color</th>
+                        <th>Price</th>
+                       
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        
+                        <td>Maroon Fur Boots For Women</td>
+                        <td>Maroon</td>
+                        <td>Rs.7,500 </td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Heart In Leopard Print T-Shirt</td>
+                        <td>Black</td>
+                        <td>Rs.5,999</td>
+                       
+                    </tr>
+                    <tr>
+                        <td>BLATE Women's Sneakers</td>
+                        <td>Pink</td>
+                        <td>Rs.16,599</td>
+                       
+                    </tr>
+                    <tr>
+                        <td>I Pee in Pool Cute Cowboy Hat</td>
+                        <td>Red</td>
+                        <td>Rs.2,500</td>
+                       
+                    </tr>
+                    <tr>
+                        <td>Travel Bag Waterproof Sports Duffle Bag </td>
+                        <td>Black</td>
+                        <td>Rs.12,900</td>
+                      
+                    </tr>
+                    <tr>
+                        <td>Men's Forrager Slippers</td>
+                        <td>Brown</td>
+                        <td>Rs.4,300</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>CITY MEN Sunglasses</td>
+                        <td>Brown & Orange</td>
+                        <td>Rs.2,599</td>
+                        
+                    </tr>
+                    <tr>
+                        <td> Pool Floats</td>
+                        <td>Yellow</td>
+                        <td>Rs.7,899</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Ford Vintage Script Baseball Cap</td>
+                        <td>White</td>
+                        <td>Rs.10,000</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>HEAD TOUR TEAM BLUE COURT BAG</td>
+                        <td>Dark BLUE</td>
+                        <td>Rs.11,500</td>
+                        
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+     <footer class="bg-dark" id="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">PLEASENT TOUR</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li id="ft">
+                            <i class="fas fa-map-marker-alt fa-fw" ></i>
+                            Pleasenttour-000998
+                        </li>
+                        <li>
+                            <i class="fa fa-phone fa-fw"></i>
+                            <a class="text-decoration-none" href="tel:010-020-0340">+921111111111 </a>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope fa-fw"></i>
+                            <a class="text-decoration-none" href="mailto:info@company.com">Pleasenttour@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">TOURS ACCESORIES</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none" id="ft" href="../Dropdown_hill_station/womens_wear.html">Hills Tour </a></li>
+                        <li><a class="text-decoration-none" id="ft" href="../Dropdown_Country_tour/casual slippers.html">Country Tour </a></li>
+                        <li><a class="text-decoration-none" id="ft" href="../Dropdown_world_tour/WT_skincare.html"> World Tour </a></li>
+                        <li><a class="text-decoration-none" id="ft" href="../Dropdown_Beach_tour/BT_hats.html"> Beach Tour </a></li>
+                        <li><a class="text-decoration-none" id="ft" href="../Dropdown_Island_tour/Island_Laguage.html"> Island Tour </a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">FURTHER INFO </h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none" id="ft" href="../Html Folder/Index.html">Home</a></li>
+                        <li><a class="text-decoration-none" id="ft" href="../Html Folder/About_us.html">About Us</a></li>
+                        <li><a class="text-decoration-none" id="ft" href="../Html Folder/Contact_us.html">Contact Us</a></li>
+                        <li><a class="text-decoration-none" id="ft" href="../Html Folder/Returns.html">FAQS</a></li>
+                        <li><a class="text-decoration-none" id="ft" href="../Html Folder/Sign_up.html">Sign Up</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="row text-light mb-4">
+                <div class="col-12 mb-3">
+                    <div class="w-100 my-3 border-top border-light"></div>
+                </div>
+                <div class="col-auto me-auto">
+                    <ul class="list-inline text-left footer-icons">
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="http://facebook.com/"><i
+                                    class="fab fa-facebook-f fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank"
+                                href="https://www.instagram.com/"><i class="fab fa-instagram fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://twitter.com/"><i
+                                    class="fab fa-twitter fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank"
+                                href="https://www.linkedin.com/"><i class="fab fa-linkedin fa-lg fa-fw"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-auto">
+                  
+                  Email:<a href="" id="ft"> Pleasenttour@gmail.com</a><br>
+                  Instagram:<a href="" id="ft">  @Pleasenttour</a><br>
+                  Facebook:<a href="" id="ft">  Facebook.com/Pleasenttour</a><br>
+                  Watsapp:<a href="" id="ft">   +32-33-33333</a><br>
+                  Call:<a href="" id="ft">  +921111111111</a>
+                 
+                </div>
+            </div>
+        </div>
+
+        <div class=" container-fluid bg-black py-3 ">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-12">
+                        <p class="text-left text-light">
+                            Copyright © 2023 Pleasent Tour
+                            | Designed by <a rel="sponsored" href="" target="_blank">Muntaha Malik</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

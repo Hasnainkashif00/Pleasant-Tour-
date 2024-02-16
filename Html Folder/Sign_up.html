@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../Css/logo.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+  #id,.p-5{
+    background-color: rgb(204, 190, 190);
+    border-radius: 30px;
+  }
+  #id1:hover{ 
+    box-shadow: 4px 4px 5px 5px rgba(255, 255, 255, 0.854);}
+  body{
+    background-image: url(../Images/bkground.jpg);
+  }
+  .form-label{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+    margin-top: 30px;
+    margin-left: 5px;
+  }
+  .form-text{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-top: 30px;
+    margin-left: 30px;
+    font-weight: 700;
+  }
+  h1{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ font-weight: normal;
+  }
+/*  .form-control{
+    width: 470px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 1px ridge black;
+  }*/
+  .form-check-label{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-top: 30px;
+    margin-left: 10px;
+   
+  }
+ 
+  .form-check-input{
+    border: 1px ridge black ;
+    margin-top: 35px;
+   
+  }
+  .form-label1{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+    margin-left: 5px;
+  }
+ 
+ #bx3{
+  font-size: 50px;
+  font-weight: 100;
+  color: rgb(6, 6, 255);
+ }
+ #bx1{
+  font-size: 50px;
+  font-weight: 100;
+  color: rgb(242, 72, 100);
+ }
+ #bx2{
+  font-size: 50px;
+  font-weight: 100;
+  color: rgb(121, 121, 250);
+ }
+ .text-light{
+font-size:larger;
+margin-bottom: 35px;
+  }
+  #ft{
+  font-size:large;
+  
+ }
+</style>
+<body>
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+        <div class="container-fluid ">
+             
+              <div class="circle">
+                <img src="../Images/R (4).png" alt="" width="160" height="110" id="img1">
+                    </div>
+                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+               
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                  <li class="nav-item mx-5">
+                    <a class="nav-link " aria-current="page" href="Index.html" id="txt">Home</a>
+                  </li>
+                  <li class="nav-item mx-5">
+                    <a class="nav-link" href="About_us.html" id="txt">About Us</a>
+                  </li>
+                  <li class="nav-item mx-5">
+                    <a class="nav-link" href="Contact_us.html" id="txt">Contact Us</a>
+                  </li>
+                  <li class="nav-item mx-5">
+                    <a class="nav-link" href="Returns.html" id="txt">FAQS</a>
+                  </li>
+                  <div class="row justify-content-around">
+                    <div class="col-3" >
+                  <a class="nav-link" href="Sign_up.html" id="txt">Login</a>
+                </div>
+              <div class="col-3 " id="icon">
+                  <i class='bx bxs-user' ></i></div>
+                  </div>
+                </ul>
+                <a class="text-light" href="https://fb.com/templatemo" target="_blank" rel="sponsored"><i
+                  class="fab fa-facebook-f fa-sm fa-fw text-light"></i></a>
+          <a class="text-light" href="https://www.instagram.com/" target="_blank"><i
+                  class="fab fa-instagram fa-sm fa-fw  text-light"></i></a>
+          <a class="text-light" href="https://twitter.com/" target="_blank"><i
+                  class="fab fa-twitter fa-sm fa-fw  text-light "></i></a>
+          <a class="text-light" href="https://www.linkedin.com/ " target="_blank"><i
+                  class="fab fa-linkedin fa-sm fa-fw text-light"></i></a>
+              </div>
+            </div>
+          </nav>
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+            <div class="container-fluid">
+              <div class="collapse navbar-collapse justify-content-center mx-5" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-5 ">
+                 
+                  <li class="nav-item dropdown mx-3">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Hills Tour
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="../Dropdown_hill_station/hills_mens_wear.html"> Mens wear</a> </li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="../Dropdown_hill_station/womens_wear.html"> Womens wear</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="../Dropdown_hill_station/Hills_tent_Gadjets.html">Tents & Gadjets</a></li>
+                        
+                    </ul>
+                  </li>
+                </ul>
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item dropdown mx-3">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Country Tour
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="../Dropdown_Country_tour/Charger And Power Bank.html "> Accessories</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="../Dropdown_Country_tour/casual slippers.html">Casual Slippers</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="../Dropdown_Country_tour/Clothing.html">Clothings</a></li>
+                  </ul>
+                  </li>
+                </ul>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                  <li class="nav-item dropdown mx-3">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      World Tour
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="../Dropdown_world_tour/WT_accessories.html"> Accessories</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="../Dropdown_world_tour/WT_skincare.html">Skin Care</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="../Dropdown_world_tour/WT_tent.html">Tents</a></li>
+                    </ul>
+                  </li>
+                
+                </ul>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item dropdown mx-3">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Beach Tour
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item " href="../Dropdown_Beach_tour/BT_hats.html">Hats</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="../Dropdown_Beach_tour/BT_sunglasses.html">Sun Glasses</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="../Dropdown_Beach_tour/BT_toys.html">Beach Accesories</a></li>
+                      </ul>
+                    </li>
+                  
+                  </ul>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item dropdown mx-3">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Island Tour
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item " href="../Dropdown_Island_tour/Island_accessories.html"> Accessories</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="../Dropdown_Island_tour/Island_Laguage.html">Laguage</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="../Dropdown_Island_tour/Island_Skincare.html">Skincare</a></li>
+                      </ul>
+                    </li>
+                  
+                  </ul>
+            
+               
+              </div>
+            </div>
+          </nav>
+    </div>
+<div class="container-fluid mb-5">
+  <div class="row">
+    <div class="col mt-5">
+      <div class="card offset-md-2 col-lg-5 col-md-7 offset-lg-4 offset-md-3 " id="id">
+        <form id="id1" class="p-5">
+          <h1>LOGIN</h1>
+          <div class="mb-3">
+            <div class="form-group">
+            <label for="exampleInputEmail1" class="form-label ">Phone Number & Email*</label>
+            <input type="email" placeholder="Enter Your Email Address Or Phone number..." class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label1">Password*</label>
+            <input type="password" placeholder="Enter Your Password..." class="form-control " id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check mx-2">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">I'd like to receive exclusive offers and promotions via SMS</label>
+          </div>
+          <div class=" text-center" >
+            <button type="submit" class="btn btn-primary btn-outline-light w-25 mb-2" style="font-family:Georgia, 'Times New Roman', Times, serif;
+            ;"> Login</button>
+           </div>
+          <div style="text-align: center;">
+          <i class='bx bxl-facebook-square mx-3 ' id="bx3" ></i> <i class='bx bxl-instagram mx-3 ' id="bx1" ></i><i class='bx bxl-twitter mx-3 ' id="bx2"></i>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="bg-dark" id="footer">
+  <div class="container">
+      <div class="row">
+
+          <div class="col-md-4 pt-5">
+              <h2 class="h2 text-light border-bottom pb-3 border-light">PLEASENT TOUR</h2>
+              <ul class="list-unstyled text-light footer-link-list">
+                  <li id="ft">
+                      <i class="fas fa-map-marker-alt fa-fw"></i>
+                      Pleasenttour-000998
+                  </li>
+                  <li>
+                      <i class="fa fa-phone fa-fw"></i>
+                      <a class="text-decoration-none" id="ft" href="tel:010-020-0340">+921111111111 </a>
+                  </li>
+                  <li>
+                      <i class="fa fa-envelope fa-fw"></i>
+                      <a class="text-decoration-none" id="ft" href="mailto:info@company.com">Pleasenttour@gmail.com</a>
+                  </li>
+              </ul>
+          </div>
+
+          <div class="col-md-4 pt-5">
+              <h2 class="h2 text-light border-bottom pb-3 border-light">TOURS ACCESORIES</h2>
+              <ul class="list-unstyled text-light footer-link-list">
+                  <li><a class="text-decoration-none" id="ft" href="../Dropdown_hill_station/womens_wear.html">Hills Tour </a></li>
+                  <li><a class="text-decoration-none" id="ft" href="../Dropdown_Country_tour/casual slippers.html">Country Tour </a></li>
+                  <li><a class="text-decoration-none" id="ft" href="../Dropdown_world_tour/WT_skincare.html"> World Tour </a></li>
+                  <li><a class="text-decoration-none" id="ft" href="../Dropdown_Beach_tour/BT_hats.html"> Beach Tour </a></li>
+                  <li><a class="text-decoration-none" id="ft" href="../Dropdown_Island_tour/Island_Laguage.html"> Island Tour </a></li>
+              </ul>
+          </div>
+
+          <div class="col-md-4 pt-5">
+              <h2 class="h2 text-light border-bottom pb-3 border-light">FURTHER INFO </h2>
+              <ul class="list-unstyled text-light footer-link-list">
+                  <li><a class="text-decoration-none" id="ft" href="../Html Folder/Index.html">Home</a></li>
+                  <li><a class="text-decoration-none"  id="ft" href="../Html Folder/About_us.html">About Us</a></li>
+                  <li><a class="text-decoration-none" id="ft" href="../Html Folder/Contact_us.html">Contact Us</a></li>
+                  <li><a class="text-decoration-none" id="ft" href="../Html Folder/Returns.html">FAQS</a></li>
+                  <li><a class="text-decoration-none" id="ft" href="../Html Folder/Sign_up.html">Sign Up</a></li>
+              </ul>
+          </div>
+
+      </div>
+
+      <div class="row text-light mb-4">
+          <div class="col-12 mb-3">
+              <div class="w-100 my-3 border-top border-light"></div>
+          </div>
+          <div class="col-auto me-auto">
+              <ul class="list-inline text-left footer-icons">
+                  <li class="list-inline-item border border-light rounded-circle text-center">
+                      <a class="text-light text-decoration-none" target="_blank" href="http://facebook.com/"><i
+                              class="fab fa-facebook-f fa-lg fa-fw"></i></a>
+                  </li>
+                  <li class="list-inline-item border border-light rounded-circle text-center">
+                      <a class="text-light text-decoration-none" target="_blank"
+                          href="https://www.instagram.com/"><i class="fab fa-instagram fa-lg fa-fw"></i></a>
+                  </li>
+                  <li class="list-inline-item border border-light rounded-circle text-center">
+                      <a class="text-light text-decoration-none" target="_blank" href="https://twitter.com/"><i
+                              class="fab fa-twitter fa-lg fa-fw"></i></a>
+                  </li>
+                  <li class="list-inline-item border border-light rounded-circle text-center">
+                      <a class="text-light text-decoration-none" target="_blank"
+                          href="https://www.linkedin.com/"><i class="fab fa-linkedin fa-lg fa-fw"></i></a>
+                  </li>
+              </ul>
+          </div>
+          <div class="col-auto">
+            
+            Email:<a href="" id="ft"> Pleasenttour@gmail.com</a><br>
+            Instagram:<a href="" id="ft">  @Pleasenttour</a><br>
+            Facebook:<a href="" id="ft">  Facebook.com/Pleasenttour</a><br>
+            Watsapp:<a href="" id="ft">   +32-33-33333</a><br>
+            Call:<a href="" id="ft">  +921111111111</a>
+           
+          </div>
+      </div>
+  </div>
+
+  <div class=" container-fluid bg-black py-3 ">
+      <div class="container">
+          <div class="row pt-2">
+              <div class="col-12">
+                  <p class="text-left text-light">
+                      Copyright © 2023 Pleasent Tour
+                      | Designed by <a rel="sponsored" href="" target="_blank">Muntaha Malik</a>
+                  </p>
+              </div>
+          </div>
+      </div>
+      
+  </div>
+
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
